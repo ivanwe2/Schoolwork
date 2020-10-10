@@ -1,0 +1,7 @@
+D:\Repository\SchoolTask 2\SchoolTask 2\bin\Debug\SchoolTask 2.exe.config
+D:\Repository\SchoolTask 2\SchoolTask 2\bin\Debug\SchoolTask 2.exe
+D:\Repository\SchoolTask 2\SchoolTask 2\bin\Debug\SchoolTask 2.pdb
+D:\Repository\SchoolTask 2\SchoolTask 2\obj\Debug\SchoolTask 2.csprojAssemblyReference.cache
+D:\Repository\SchoolTask 2\SchoolTask 2\obj\Debug\SchoolTask 2.csproj.CoreCompileInputs.cache
+D:\Repository\SchoolTask 2\SchoolTask 2\obj\Debug\SchoolTask 2.exe
+D:\Repository\SchoolTask 2\SchoolTask 2\obj\Debug\SchoolTask 2.pdb
