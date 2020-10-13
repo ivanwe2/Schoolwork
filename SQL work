@@ -1,0 +1,52 @@
+create table Players (
+id mediumint,
+name varchar(30) not null,
+age int,
+playerNationality mediumint,
+constraint PK_Players primary key(id),
+
+constraint FK_Players_Nationality foreign key(playerNationality)
+references Nationality(id),
+
+-- constraint FK_Players_TournamentPlayers foreign key(tournaments)
+-- references TournamentPlayers(
+);
+
+-- players - nationality bind
+
+create table Nationality(
+id mediumint,
+name varchar(30) not null,
+playerID mediumint,
+constraint PK_Nationality primary key(id),
+
+constraint FK_Nationality_Players foreign key(playerID)
+references Players(id)
+);
+
+create table Tournaments(
+id mediumint,
+name varchar(30) not null,
+dateOpen datetime,
+dateClose datetime,
+prize decimal,
+constraint PK_Tournamets primary key(id),
+
+
+);
+
+-- players tournaments bind
+create table TournamentPlayers(
+playerID mediumint,
+tournamentID mediumint,
+constraint FK_TournamentPlayers_Players foreign key(playerID)
+references Players(id),
+
+constraint FK_TournamentPlayers_Tournaments foreign key(tournamentID)
+references Tournaments(id)
+);
+
+create table PlayerTournaments(
+playerID mediumint,
+tournamentID mediumint,
+);
