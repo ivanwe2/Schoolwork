@@ -1,0 +1,6 @@
+D:\Rusev\16_IvanRusev_11e\16_IvanRusev_11e\bin\Debug\16_IvanRusev_11e.exe.config
+D:\Rusev\16_IvanRusev_11e\16_IvanRusev_11e\bin\Debug\16_IvanRusev_11e.exe
+D:\Rusev\16_IvanRusev_11e\16_IvanRusev_11e\bin\Debug\16_IvanRusev_11e.pdb
+D:\Rusev\16_IvanRusev_11e\16_IvanRusev_11e\obj\Debug\16_IvanRusev_11e.csprojResolveAssemblyReference.cache
+D:\Rusev\16_IvanRusev_11e\16_IvanRusev_11e\obj\Debug\16_IvanRusev_11e.exe
+D:\Rusev\16_IvanRusev_11e\16_IvanRusev_11e\obj\Debug\16_IvanRusev_11e.pdb
