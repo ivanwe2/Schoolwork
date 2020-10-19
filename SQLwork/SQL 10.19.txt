@@ -27,3 +27,19 @@ references Products(name);
 alter table Products_Dishes  
 add constraint FK_PD_Dishes foreign key(id)
 references Dishes(id);
+
+create table Orders(
+id int,
+price decimal(9,2) check(price>0),
+constraint PK_Orders primary key(id)
+);
+
+create table Orders_Dishes(
+orderId int,
+dishId int,
+constraint PK_Orders primary key (orderId, dishId),
+constraint FK_OD_Orders foreign key(orderId)
+references Orders(id),
+constraint FK_OD_Dishes foreign key(dishId)
+references Dishes(id)
+);
