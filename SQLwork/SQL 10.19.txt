@@ -1,0 +1,29 @@
+create table Products(
+name varchar(30),
+quantity int check(quantity >0 AND quantity<=100),
+price decimal(9,2) check(price >0),
+constraint PK_Products primary key(name)
+);
+
+create table Dishes(
+id int,
+name varchar(50) not null,
+price decimal(9,2) check(price >0),
+weight int not null,
+image mediumblob null,
+constraint PK_Dishes primary key(id)
+);
+
+create table Products_Dishes(
+name varchar(30),
+id int,
+constraint PK_PD primary key (name,id)
+);
+
+alter table Products_Dishes 
+add constraint FK_PD_Products foreign key(name)
+references Products(name);
+
+alter table Products_Dishes  
+add constraint FK_PD_Dishes foreign key(id)
+references Dishes(id);
