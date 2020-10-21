@@ -1,0 +1,26 @@
+public class PP
+    {
+        public string Zadai { get; set; }
+
+
+        public PP(string z  )
+        {
+            this.Zadai = z;
+        }
+
+        public static void SaveInfo(PP p)
+        {
+            using (System.IO.StreamWriter sw = System.IO.File.AppendText(@"D:\ConsoleApplication25\zoro.txt"))
+            {
+                sw.WriteLine("{0} : mazen",p.Zadai);
+            }
+            Console.WriteLine("Done!");
+        }
+    }
+    
+    static void Main(string[] args)
+        {
+            PP p = new PP("kir");
+            PP.SaveInfo(p);
+
+        }
